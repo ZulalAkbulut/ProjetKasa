@@ -1,0 +1,124 @@
+.main-lodging {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .information {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .information-main {
+            margin-top: 30px;
+            align-items: center;
+            width: 100%;
+
+            .title-tags {
+                flex: 1;
+
+                h1 {
+                    color: #FF6060;
+                    font-size: 36px;
+                    font-weight: 500;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: black;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                }
+
+                .tag {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .information-secondary {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .rating {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-lodging .information .information-main .title-tags h1 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .main-lodging {
+        padding-bottom: 0 !important;
+
+        .information {
+            flex-direction: column;
+
+            .information-main {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+
+                .title-tags {
+                    height: 70px;
+                    width: 100%;
+
+                    h1 {
+                        font-size: 18px;
+                        color: #FF6060;
+                        font-weight: 500;
+                        margin-bottom: 0;
+                        width: 100%;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        margin: 0;
+                        color: black;
+                        text-align: start;
+                        margin: 5px 0 5px 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .information-secondary {
+                display: flex !important;
+                flex-direction: row-reverse !important;
+                justify-content: space-between !important;
+                margin-top: 0;
+                margin-bottom: 15px;
+                gap: 0;
+                width: 100%;
+
+                .rating {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start !important;
+
+                    img {
+                        height: 13px;
+                        width: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
